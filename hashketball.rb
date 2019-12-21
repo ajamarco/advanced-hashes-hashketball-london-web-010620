@@ -206,9 +206,9 @@ def big_shoe_rebounds
   away_players = teams[:away][:players]
   pp home_players
   player_with_the_bigger_shoes = home_players = teams[:home][:players][0]
-  home_players.each do |player|
+  home_players.length.times do |index|
     puts "imprimindo agora o jogador individual"
-    pp player
+    pp home_players[index]
   end  
   puts player_with_the_bigger_shoes
   
