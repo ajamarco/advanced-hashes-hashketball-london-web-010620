@@ -202,7 +202,6 @@ end
 def big_shoe_rebounds
   teams = game_hash
   player_with_the_bigger_shoes = {}
-  pp home_players
   player_with_the_bigger_shoes = teams[:home][:players][0]
   teams[:home][:players].each do |player|
     puts "jogador individual do home"
