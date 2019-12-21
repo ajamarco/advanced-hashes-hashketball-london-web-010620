@@ -185,14 +185,16 @@ def player_stats(player_name)
   home_players.each do |player|
     if player_name == player[:player_name]
       hash_to_return = player 
-      
-      return player
+      hash_to_return.delete(:player_name)
+      return hash_to_return
     end
   end
   
   away_players.each do |player|
     if player_name == player[:player_name]
-      return player
+      hash_to_return = player 
+      hash_to_return.delete(:player_name)
+      return hash_to_return
     end
   end
 end
