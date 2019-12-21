@@ -204,6 +204,7 @@ def big_shoe_rebounds
   player_with_the_bigger_shoes = {}
   home_players = teams[:home][:players]
   away_players = teams[:away][:players]
+  pp home_players
   player_with_the_bigger_shoes = home_players = teams[:home][:players][0]
   home_players.each do |player|
     pp player
