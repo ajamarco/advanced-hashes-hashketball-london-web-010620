@@ -207,9 +207,9 @@ def big_shoe_rebounds
   pp home_players
   player_with_the_bigger_shoes = home_players = teams[:home][:players][0]
   puts "imprimindo o primeiro jogador do home"
-  pp home_players[0]
+  puts home_players[0]
   puts "imprimindo o terceiro jogador do home"
-  pp home_players[2]
+  puts home_players[2]
   
   
   
