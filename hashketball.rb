@@ -184,6 +184,8 @@ def player_stats(player_name)
   
   home_players.each do |player|
     if player_name == player[:player_name]
+      hash_to_return = player 
+      
       return player
     end
   end
