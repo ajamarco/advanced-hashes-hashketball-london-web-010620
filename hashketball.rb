@@ -256,6 +256,4 @@ def winning_team
   else
     return "draw"
   end
-
-
 end
