@@ -223,17 +223,17 @@ def most_points_scored
   player_with_most_points = {}
   player_with_most_points = teams[:home][:players][0]
   teams[:home][:players].each do |player|
-    if player[:shoe] > player_with_most_points[:shoe]
+    if player[:points] > player_with_most_points[:points]
       player_with_most_points = player 
     end
   end
   
   teams[:away][:players].each do |player|
-    if player[:shoe] > player_with_most_points[:shoe]
+    if player[:points] > player_with_most_points[:points]
       player_with_most_points = player 
     end
   end
   
-  player_with_most_points[:rebounds]
+  player_with_most_points[:player_name]
 end
 
