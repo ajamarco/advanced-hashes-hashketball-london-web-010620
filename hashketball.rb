@@ -263,16 +263,16 @@ def player_with_longest_name
   longest_name = teams[:home][:players][0]
   puts longest_name
   teams[:home][:players].each do |player|
-    if player[:player_name].length > longest_name.length
-      longest_name = player[:player_name]
+    if player[:player_name].length > longest_name[:player_name].length
+      longest_name = player
     end
   end
   teams[:away][:players].each do |player|
-    if player[:player_name].length > longest_name.length
-      longest_name = player[:player_name] 
+    if player[:player_name].length > longest_name[:player_name].length
+      longest_name = player 
     end
   end
-  longest_name
+  longest_name[:player_name]
 end
 
 
