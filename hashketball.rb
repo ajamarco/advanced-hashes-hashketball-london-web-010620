@@ -205,7 +205,11 @@ def big_shoe_rebounds
   home_players = teams[:home][:players]
   away_players = teams[:away][:players]
   player_with_the_bigger_shoes = home_players = teams[:home][:players][0]
-  
+  home_players.each do |player|
+    if player[:shoe] > player_with_the_bigger_shoes[:shoe]
+      player_with_the_bigger_shoes = player
+    end
+  end  
   puts player_with_the_bigger_shoes
   
 end
