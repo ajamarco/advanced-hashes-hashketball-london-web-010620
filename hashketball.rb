@@ -263,4 +263,5 @@ def player_with_longest_name
   longest_name = {}
   longest_name = teams[:home][:players][0][:player_name]
   puts longest_name
+  puts longest_name.length
 end
