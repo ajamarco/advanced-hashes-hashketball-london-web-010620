@@ -275,5 +275,26 @@ def player_with_longest_name
   longest_name[:player_name]
 end
 
+def player_with_longest_name_stats
+  teams = game_hash
+  longest_name = teams[:home][:players][0]
+  puts longest_name
+  teams[:home][:players].each do |player|
+    if player[:player_name].length > longest_name[:player_name].length
+      longest_name = player
+    end
+  end
+  teams[:away][:players].each do |player|
+    if player[:player_name].length > longest_name[:player_name].length
+      longest_name = player 
+    end
+  end
+  longest_name
+end
+
 def long_name_steals_a_ton?
+  teams = game_hash
+  player_longest_name = player_with_longest_name_stats
+  puts player_longest_name
+  
 end 
