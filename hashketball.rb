@@ -154,7 +154,7 @@ def team_colors(team)
   puts "o away color é #{away_color}"
   if team == teams[:home][:team_name]
     return home_color
-  else if team == teams[:away][:team_name]
+  elsif team == teams[:away][:team_name]
     return away_color
   end
 end 
