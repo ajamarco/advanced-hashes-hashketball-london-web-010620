@@ -203,7 +203,6 @@ def big_shoe_rebounds
   teams = game_hash
   player_with_the_bigger_shoes = {}
   player_with_the_bigger_shoes = teams[:home][:players][0]
-  puts "o mais pezudo é #{player_with_the_bigger_shoes}"
   teams[:home][:players].each do |player|
     if player[:shoe] > player_with_the_bigger_shoes[:shoe]
       player_with_the_bigger_shoes = player 
@@ -216,10 +215,7 @@ def big_shoe_rebounds
     end
   end
   
-  puts "AGORA  o mais pezudo é #{player_with_the_bigger_shoes}"
-  
-  
-  
+  player_with_the_bigger_shoes[:rebounds]
 end
 
 
