@@ -177,6 +177,23 @@ def player_numbers(team_name)
   numbers
 end
 
+def player_stats(player_name)
+  teams = game_hash
+  home_players = teams[:home][:players]
+  away_players = teams[:away][:players]
+  
+  home_players.each do |player|
+    if player_name == player[:player_name]
+      return player
+    end
+  end
+  
+  away_players.each do |player|
+    if player_name == player[:player_name]
+      return player
+    end
+  end
+end
 
 
 
