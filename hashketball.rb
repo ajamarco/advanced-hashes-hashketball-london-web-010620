@@ -134,13 +134,13 @@ def shoe_size(player_name)
   
   home_players.each do |player|
     if player_name == player[:player_name]
-      return player[:points]
+      return player[:shoe]
     end
   end
   
   away_players.each do |player|
     if player_name == player[:player_name]
-      return player[:points]
+      return player[:shoe]
     end
   end
 end
