@@ -218,5 +218,22 @@ def big_shoe_rebounds
   player_with_the_bigger_shoes[:rebounds]
 end
 
-
+def most_points_scored
+  teams = game_hash
+  player_with_the_bigger_shoes = {}
+  player_with_the_bigger_shoes = teams[:home][:players][0]
+  teams[:home][:players].each do |player|
+    if player[:shoe] > player_with_the_bigger_shoes[:shoe]
+      player_with_the_bigger_shoes = player 
+    end
+  end
+  
+  teams[:away][:players].each do |player|
+    if player[:shoe] > player_with_the_bigger_shoes[:shoe]
+      player_with_the_bigger_shoes = player 
+    end
+  end
+  
+  player_with_the_bigger_shoes[:rebounds]
+end
 
