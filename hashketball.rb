@@ -164,7 +164,8 @@ end
 
 def player_numers(team_name)
   teams = game_hash
-  
+  numbers = []
+  teams[:home][:players]
 end
 
 
