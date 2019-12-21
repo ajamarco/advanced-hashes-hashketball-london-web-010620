@@ -166,7 +166,9 @@ def player_numbers(team_name)
   teams = game_hash
   numbers = []
   if team_name == teams[:home][:team_name]
-    puts "home team"
+    teams[:home][:players].each do |player|
+      numbers.push(player[:number])
+    end
   elsif team_name == teams[:away][:team_name]
     puts "away team"
   end
