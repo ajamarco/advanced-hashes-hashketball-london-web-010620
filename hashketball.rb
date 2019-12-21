@@ -209,7 +209,7 @@ def big_shoe_rebounds
   puts "imprimindo o primeiro jogador do home"
   puts home_players[0]
   puts "imprimindo o terceiro jogador do home"
-  puts home_players[2]
+  puts teams[:home][:players][2]
   
   
   
