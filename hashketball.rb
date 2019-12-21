@@ -172,7 +172,7 @@ def player_numbers(team_name)
   elsif team_name == teams[:away][:team_name]
     puts "away team"
   end
-  
+  numbers
 end
 
 
