@@ -153,9 +153,7 @@ def team_colors(team)
   puts "o home color é #{home_color}"
   puts "o away color é #{away_color}"
   if team == teams[:home][:team_name]
-    return home_color
-  else if team == teams[:away][:team_name]
-    return away_color
+    puts "dentro do iff" 
   end
 end 
 
