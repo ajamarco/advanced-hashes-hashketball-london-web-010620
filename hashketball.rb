@@ -202,14 +202,11 @@ end
 def big_shoe_rebounds
   teams = game_hash
   player_with_the_bigger_shoes = {}
-  home_players = teams[:home][:players]
-  away_players = teams[:away][:players]
   pp home_players
   player_with_the_bigger_shoes = home_players = teams[:home][:players][0]
-  puts "imprimindo o primeiro jogador do home"
-  puts home_players[0]
-  puts "imprimindo o terceiro jogador do home"
-  puts teams[:home][:players][2]
+  teams[:home][:players].each do |player|
+    pp player
+  end
   
   
   
