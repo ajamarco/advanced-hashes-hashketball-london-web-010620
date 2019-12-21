@@ -210,6 +210,12 @@ def big_shoe_rebounds
     end
   end
   
+  teams[:away][:players].each do |player|
+    if player[:shoe] > player_with_the_bigger_shoes[:shoe]
+      player_with_the_bigger_shoes = player 
+    end
+  end
+  
   puts "AGORA  o mais pezudo é #{player_with_the_bigger_shoes}"
   
   
