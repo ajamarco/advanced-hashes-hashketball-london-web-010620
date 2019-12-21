@@ -170,7 +170,9 @@ def player_numbers(team_name)
       numbers.push(player[:number])
     end
   elsif team_name == teams[:away][:team_name]
-    puts "away team"
+    teams[:away][:players].each do |player|
+      numbers.push(player[:number])
+    end
   end
   numbers
 end
