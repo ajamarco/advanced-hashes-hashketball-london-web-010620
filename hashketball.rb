@@ -162,7 +162,7 @@ def team_names
   team_names
 end
 
-def player_numers(team_name)
+def player_numbers(team_name)
   teams = game_hash
   numbers = []
   if team_name == teams[:home][:team_name]
