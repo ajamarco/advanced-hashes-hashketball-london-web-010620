@@ -205,6 +205,7 @@ def big_shoe_rebounds
   pp home_players
   player_with_the_bigger_shoes = home_players = teams[:home][:players][0]
   teams[:home][:players].each do |player|
+    puts "jogador individual"
     pp player
   end
   
