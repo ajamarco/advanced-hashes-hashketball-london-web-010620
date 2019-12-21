@@ -199,7 +199,13 @@ def player_stats(player_name)
   end
 end
 
-
+def big_shoe_rebounds
+  teams = game_hash
+  player_with_the_bigger_shoes = {}
+  home_players = teams[:home][:players]
+  away_players = teams[:away][:players]
+  player_with_the_bigger_shoes = home_players = teams[:home][:players][0]
+end
 
 
 
