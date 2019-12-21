@@ -165,7 +165,12 @@ end
 def player_numers(team_name)
   teams = game_hash
   numbers = []
-  teams[:home][:players]
+  if team_name == teams[:home][:team_name]
+    puts "home team"
+  elsif team_name == teams[:away][:team_name]
+    puts "away team"
+  end
+  
 end
 
 
