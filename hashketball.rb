@@ -210,7 +210,7 @@ def big_shoe_rebounds
     puts "imprimindo agora o jogador individual"
     pp home_players[index]
   end  
-  puts player_with_the_bigger_shoes
+  
   
 end
 
